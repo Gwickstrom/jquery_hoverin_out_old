@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+#wrapper{
+    max-width: 400px;
+    max-height: 600px;
+    width: 600px;
+    height: 400px;
+    background:transparent;
+
+}
+#box1{
+    width: 100%;
+    height: 30%;
+
+}
+
+.my_image{
+    width: 18%;
+    height: 100%;
+    padding: 1px;
+    display: inline;
+}

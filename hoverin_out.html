@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Assignment 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="hoverin_out.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+            $('.my_image').mouseenter(function(){
+            // var sourceSwap = function () {
+                var $this = $(this);
+                var newSource = $this.data('alt-src');
+                    $this.data('alt-src', $this.attr('src'));
+                    $this.attr('src', newSource);
+        });
+            $('.my_image').mouseleave(function(){
+            // var sourceSwap = function () {
+                var $this = $(this);
+                var newSource = $this.data('alt-src');
+                $this.data('alt-src', $this.attr('src'));
+                    $this.attr('src', newSource);
+        });
+    });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="box1">
+            <img class="my_image" src='ninja0.png' data-alt-src='cat0.png' alt="pics"/>
+            <img class="my_image" src='ninja1.png' data-alt-src='cat1.png' alt="pics"/>
+            <img class="my_image" src='ninja2.png' data-alt-src='cat2.png' alt="pics"/>
+            <img class="my_image" src='ninja3.png' data-alt-src='cat3.png' alt="pics"/>
+            <img class="my_image" src='ninja4.png' data-alt-src='cat4.png' alt="pics"/>
+        </div>
+    </div>
+</body>
+</html>
